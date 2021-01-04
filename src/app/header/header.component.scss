@@ -1,0 +1,24 @@
+$lt-gray: #ddd;
+$background-dark: #88332c;
+$background-light: #dd4236;
+$background-pale: #cf5151;
+$background-moredark: #d92727;
+.mat-button
+{
+  color: white;
+}
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px);
+    background: $background-light ;
+    color:floralwhite;
+    min-height: 150px;
+}
+
+.active {
+  background: $background-moredark;
+}

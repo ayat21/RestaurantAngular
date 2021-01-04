@@ -1,0 +1,100 @@
+<div class="container"
+     fxLayout="row"
+     fxLayout.sm="column"
+     fxLayout.xs="column"
+     fxLayoutAlign.gt-mat="space-around center"
+     fxLayoutGap="10px">
+
+     <div class="cards-1 section-gray"   >
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card card-blog">
+                      <div class="card-image">
+                          <a href="#">
+                            <img class="img"
+                             src="{{BaseURL + dish.image}}" alt={{dish.name}}>
+                              <div class="card-caption"> {{dish.name | uppercase}} </div>
+                          </a>
+                          <div class="ripple-cont"></div>
+                      </div>
+                      <div class="table">
+                          <h6 class="  text-info">{{dish.description}}</h6>
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+      </div>
+  </div>
+  <div fxFlex [hidden]="dish || dishErrMess">
+    <mat-spinner></mat-spinner><h4>Loading . . . Please wait</h4>
+  </div>
+  <div fxFlex *ngIf="dishErrMess">
+    <h2>Error</h2>
+    <h4>{{dishErrMess}}</h4>
+  </div>
+<!--5555555555555555555555555555555555555-->
+<div class="cards-1 section-gray"   >
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card card-blog">
+                  <div class="card-image">
+                      <a  >
+                        <img class="img"
+                         src="{{BaseURL + promotion.image}}" alt={{promotion.name}}>
+                          <div class="card-caption"> {{promotion.name | uppercase}} </div>
+                      </a>
+                      <div class="ripple-cont"></div>
+                  </div>
+                  <div class="table">
+                      <h6 class="  text-info">{{promotion.description}}</h6>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+  </div>
+</div>
+<div fxFlex [hidden]="dish || dishErrMess">
+  <mat-spinner></mat-spinner><h4>Loading . . . Please wait</h4>
+</div>
+ <!--5555555555555555555555555555555555555-->
+
+<div class="cards-1 section-gray"   >
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card card-blog">
+                  <div class="card-image">
+                      <a  >
+                        <img height="320px" class="img"
+                         src="{{BaseURL + leader.image}}" alt={{leader.name}}>
+                          <div class="card-caption"> {{leader.name | uppercase}} </div>
+                      </a>
+                      <div class="ripple-cont"></div>
+                  </div>
+                  <div class="table">
+                      <h6 class="  text-info">{{leader.description}}</h6>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+  </div>
+</div>
+<div fxFlex [hidden]="dish || dishErrMess">
+  <mat-spinner></mat-spinner><h4>Loading . . . Please wait</h4>
+</div>
+
+
+</div>
+
+
+
+
+

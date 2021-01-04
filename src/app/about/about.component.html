@@ -1,0 +1,55 @@
+<div >
+
+  <mat-tab-group  mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4"
+   animationDuration="2000ms"   >
+    <mat-tab   label="Our History">
+      <div fxFlex="70%"  >
+        <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+        <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+
+      </div>
+    </mat-tab>
+    <mat-tab label="blockquote">
+      <blockquote>
+        <p>You better cut the pizza in four pieces because
+            I'm not hungry enough to eat six.</p>
+        <p>-- Yogi Berra,
+          <p>The Wit and Wisdom of Yogi Berra,
+            P. Pepe, Diversion Books, 2014</p>
+
+      </blockquote>
+    </mat-tab>
+    <mat-tab label="Corporate Leadership"> <h2></h2>
+      <mat-list *ngIf="leaders"  [@expand]>
+        <mat-list-item style="margin-left: 480px;" *ngFor="let leader of leaders">
+          <img mat-list-avatar src="{{BaseURL + leader.image}}" alt={{leader.name}}>
+          <h2 mat-line>
+            {{leader.name}}
+          </h2>
+          <h2 mat-line>
+          {{leader.designation}}
+          </h2>
+
+        </mat-list-item>
+      </mat-list>
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row testimonials">
+          <div class="col-sm-4">
+            <blockquote>
+              <p class="clients-words">
+                Hi there, We just bought bootdey is a nice gallery  </p>
+              <span class="clients-name text-primary">— Amanda corey</span>
+              <img class="img-circle img-thumbnail" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+            </blockquote>
+          </div>
+          </div>
+          </div>
+    </mat-tab>
+  </mat-tab-group>
+
+
+
+
+
+
+</div>
